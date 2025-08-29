@@ -35,7 +35,7 @@ function showEldenRingBanner() {
 
 // Gmail observer
 const gmailObserver = new MutationObserver(() => {
-    const sendButtons = document.querySelectorAll('[aria-label^="Invia"], [data-tooltip^="Invia"]');
+    const sendButtons = document.querySelectorAll('[aria-label^="Send"], [data-tooltip^="Send"]');
     sendButtons.forEach(btn => {
         if (!btn.dataset.eldenRingAttached) {
             btn.addEventListener('click', () => {
@@ -50,7 +50,7 @@ gmailObserver.observe(document.body, { childList: true, subtree: true });
 
 // Outlook observer
 const outlookObserver = new MutationObserver(() => {
-    const sendBtn = document.querySelector('button[title="Invia"]');
+    const sendBtn = document.querySelector('button[title="Send"]');
     if (sendBtn && !sendBtn.dataset.eldenRingAttached) {
         sendBtn.addEventListener('click', () => {
             console.log("Outlook send button clicked");

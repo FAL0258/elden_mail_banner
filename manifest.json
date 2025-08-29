@@ -1,4 +1,9 @@
 {
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@elden-email"
+    }
+  },
   "manifest_version": 3,
   "name": "Elden Email",
   "version": "1.0",

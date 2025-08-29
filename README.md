@@ -2,6 +2,15 @@
 An Elden Ring–inspired Chrome extension that makes sending emails more epic.  
 When you hit **Send** in Gmail or Outlook Web, a dramatic banner appears with sound, just like in the Lands Between. ⚔️
 
+# Firefox adaptation
+
+1. Enable untrusted source on Firefox
+    - `about:config`
+        - `xpinstall.signatures.required` -> Set to `false`
+2. (Optional) Validate on mozilla
+    - [Click me](https://addons.mozilla.org/en-US/developers/addon/validate)
+3. Import the `.zip` file
+
 ---
 
 ## 🚀 Features
